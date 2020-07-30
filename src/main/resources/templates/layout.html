@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html
+        xmlns:th="http://thymeleaf.org/"
+        xmlns:layout="http://ultraq.net.nz/thymeleaf/layout/">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HelpDeskJF</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" th:href="@{/css/app.css}"/>
+</head>
+<body>
+    <th:block layout:replace="fragments/header"></th:block>
+    <div class="container">
+        <div class="row">
+            <th:block layout:fragment="content"></th:block>
+        </div>
+    </div>
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+</body>
+</html>
